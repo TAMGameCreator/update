@@ -1,0 +1,82 @@
+@charset "UTF-8"
+{}
+body::-webkit-scrollbar {
+  display: none;
+}
+h1{
+  font-size: 10vw;
+  text-align: center;
+  color: white;
+}
+.text{
+  text-align: left;
+  padding-left: 5%;
+  font-size: 6vw;
+  color: white;
+}
+img{
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 100%;
+  transition: all 0.3s;
+}
+img:hover{
+  width: 55%;
+  margin-left: 22.5%;
+}
+.icon{
+  font-size: 0px;
+}
+@media (max-width:600px) and (min-width:400px) {
+  h1{
+    font-size: 7vw;
+    text-align: center;
+    color: white;
+  }
+  .text{
+    text-align: left;
+    padding-left: 20%;
+    font-size: 4vw;
+    color: white;
+  }
+  img{
+    width: 30%;
+    margin-left: 35%;
+    justify-content: center;
+    border-radius: 100%;
+    transition: all 0.3s;
+  }
+  img:hover{
+    width: 35%;
+    margin-left: 32.5%;
+  }
+  .icon{
+    font-size: 0px;
+  }
+}
+p{
+  padding-bottom: 5%;
+}
+.button{
+  background-color: cyan;
+  text-decoration:none;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  font-size: 7vw;
+  transition: all 0.3s;
+}
+.button:hover{
+  background-color: blue;
+  font-size: 8vw;
+  color: white;
+}
+.padding{
+  text-align: center;
+  padding-bottom: 10vw;
+}
+*{
+  margin:0%;
+  padding:0%;
+}
