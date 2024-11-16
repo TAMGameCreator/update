@@ -22,5 +22,19 @@
             <div class="padding"><a href="http://tamgamecreator.github.io/NO.01/" class="button" target="_top">第一回</a></div>
             <div class="padding"><a href="http://tamgamecreator.github.io/NO.02/" class="button" target="_top">第二回</a></div>
             <div class="padding"><a href="http://tamgamecreator.github.io/NO.03/" class="button" target="_top">第三回</a></div>
+              <script>
+                     const postIframeHeight = () => {
+    const height = document.documentElement.offsetHeight;
+    window.parent.postMessage({ iframeHeight: height }, 'https://tamgamecreator.github.io'); // https://example.comはiframeを埋め込むサイトのオリジンに置き換える
+};
+
+window.addEventListener('DOMContentLoaded', () => {
+    postIframeHeight();
+});
+
+window.addEventListener('resize', () => {
+    postIframeHeight();
+});
+              </script>
        </body>
 </html>
