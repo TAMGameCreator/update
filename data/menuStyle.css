@@ -72,13 +72,13 @@ p{
 @keyframes flash {
   0%, 100% {
     /* 明るく光るよう影を重ねる */
-    text-shadow: 0 0 0.3vw cyan, 0 0 1vw cyan, 0 0 6vw blue;
-    box-shadow: 0 0 0.3vw #06A8F2,0 0 1.5vw blue,0 0 5vw cyan;
+    text-shadow: 0 0 0.3vw cyan, 0 0 1vw cyan, 0 0 4vw blue;
+    box-shadow: 0 0 0.6vw #06A8F2,0 0 1.5vw blue,0 0 8vw cyan;
   }
   50% {
     /* 淡く光るよう影を重ねる */
     text-shadow: 0 0 0.2vw cyan, 0 0 2vw blue, 0 0 4vw #06A8F2;
-    box-shadow: 0 0 0.3vw #06A8F2,0 0 1.5vw blue,0 0 5vw #06A8F2;
+    box-shadow: 0 0 0.6vw #06A8F2,0 0 1.5vw blue,0 0 10vw #06A8F2;
   }
 }
 @keyframes flashIcon {
