@@ -20,8 +20,7 @@ img{
   transition: all 0.3s;
 }
 img:hover{
-  width: 55%;
-  margin-left: 22.5%;
+  animation: flashIcon 3s infinite; /* アニメーションflashを1秒ごとに繰り返す */
 }
 .icon{
   font-size: 0px;
@@ -46,8 +45,7 @@ img:hover{
     transition: all 0.3s;
   }
   img:hover{
-    width: 35%;
-    margin-left: 32.5%;
+    animation: flashIcon 3s infinite; /* アニメーションflashを1秒ごとに繰り返す */
   }
   .icon{
     font-size: 0px;
@@ -67,13 +65,31 @@ p{
   transition: all 0.3s;
 }
 .button:hover{
-  background-color: blue;
-  box-shadow: 0 0 5px blue,
-                0 0 25px blue,
-                0 0 50px blue,
-                0 0 200px blue;
-  font-size: 8vw;
+  background-color: cyan;
   color: white;
+  animation: flash 3s infinite; /* アニメーションflashを1秒ごとに繰り返す */
+}
+@keyframes flash {
+  0%, 100% {
+    /* 明るく光るよう影を重ねる */
+    text-shadow: 0 0 0.3vw cyan, 0 0 1vw cyan, 0 0 6vw blue;
+    box-shadow: 0 0 0.3vw #06A8F2,0 0 1.5vw blue,0 0 5vw cyan;
+  }
+  50% {
+    /* 淡く光るよう影を重ねる */
+    text-shadow: 0 0 0.2vw cyan, 0 0 2vw blue, 0 0 4vw #06A8F2;
+    box-shadow: 0 0 0.3vw #06A8F2,0 0 1.5vw blue,0 0 5vw #06A8F2;
+  }
+}
+@keyframes flashIcon {
+  0%, 100% {
+    /* 明るく光るよう影を重ねる */
+    box-shadow: 0 0 0.3vw blue,0 0 1.5vw blue,0 0 10vw cyan;
+  }
+  50% {
+    /* 淡く光るよう影を重ねる */
+    box-shadow: 0 0 1vw #06A8F2,0 0 1.5vw blue,0 0 15vw #06A8F2;
+  }
 }
 .padding{
   text-align: center;
